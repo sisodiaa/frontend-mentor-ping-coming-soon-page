@@ -109,6 +109,34 @@
   }
 }
 
+@media only screen and (min-width: $breakpoint-mobile) {
+  .page {
+    &__heading {
+      font-size: 2.75rem;
+    }
+
+    &__subheading {
+      font-size: 1rem;
+    }
+
+    &__form {
+      display: flex;
+      column-gap: 0.6rem;
+
+      input {
+        &[type="email"] {
+          margin-bottom: 0rem;
+          flex: 7;
+        }
+
+        &[type="submit"] {
+          flex: 3;
+        }
+      }
+    }
+  }
+}
+
 .attribution {
   display: none;
 }

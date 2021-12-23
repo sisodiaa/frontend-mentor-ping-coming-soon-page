@@ -1,4 +1,11 @@
+@use 'base' as *;
+
 .container {
   width: 90%;
+  max-width: 39.6rem;
   margin: 0 auto;
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    width: 70%;
+  }
 }
