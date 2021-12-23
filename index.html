@@ -10,14 +10,54 @@
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
+  <div class="container">
+    <div class="page">
+      <section class="page__header">
+        <img src="images/logo.svg" alt="Logo"/>
+      </section>
 
-  We are launching soon!
+      <main class="page__main">
+        <h1 class="page__heading"><span>We are launching</span> soon!</h1>
+        
+        <h2 class="page__subheading">Subscribe and get notified</h2>
+        
+        <form class="page__form">
+          <input
+            type="email" name="email"
+            id="page__email" class="page__email"
+            placeholder="Your email address..."
+          >
+          <input type="submit" value="Notify Me">
+        </form>
 
-  Subscribe and get notified
+        <img class="page__illustration" src="images/illustration-dashboard.png" alt="Illustration">
+      </main>
 
-  Notify Me
+      <section class="page__footer">
+        <div class="page__icons">
+          <div class="page__icon-box">
+            <svg class="page__icon">
+              <use href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </div>
+          <div class="page__icon-box">
+            <svg class="page__icon">
+              <use href="images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </div>
+          <div class="page__icon-box">
+            <svg class="page__icon">
+              <use href="images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </div>
+        </div>
 
-  &copy; Copyright Ping. All rights reserved.
+        <p class="page__legal">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </section>
+    </div>
+  </div>
 
   <footer>
     <p class="attribution">
