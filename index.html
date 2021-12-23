@@ -22,11 +22,16 @@
         <h2 class="page__subheading">Subscribe and get notified</h2>
         
         <form class="page__form">
-          <input
-            type="email" name="email"
-            id="page__email" class="page__email"
-            placeholder="Your email address..."
-          >
+          <div>
+            <input
+              type="email" name="email"
+              id="page__email" class="page__email"
+              placeholder="Your email address..."
+            >
+            <p class="page__error">
+              <small><em>Please provide a valid email address</em></small>
+            </p>
+          </div>
           <input type="submit" value="Notify Me">
         </form>
 
@@ -65,5 +70,7 @@
       Coded by <a href="#">Abhishek Sisodia</a>.
     </p>
   </footer>
+
+  <script src="application.js"></script>
 </body>
 </html>

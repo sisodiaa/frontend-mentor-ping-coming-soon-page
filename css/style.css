@@ -82,6 +82,10 @@ body {
   opacity: 0.5;
   font-size: 0.9rem;
 }
+.page__form input[type=email].invalid {
+  outline: none;
+  border: 1px solid var(--color-light-red);
+}
 .page__form input[type=submit] {
   padding: 1rem 0rem;
   border: none;
@@ -91,6 +95,16 @@ body {
   color: #fff;
   letter-spacing: 0.05rem;
   box-shadow: 0px 6px 18px -4px var(--color-blue);
+}
+.page__error {
+  display: none;
+  text-align: center;
+  color: var(--color-light-red);
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+.page__email.invalid + .page__error {
+  display: block;
 }
 .page__illustration {
   display: block;
@@ -136,12 +150,20 @@ body {
     display: flex;
     column-gap: 0.6rem;
   }
+  .page__form div {
+    flex: 7;
+  }
   .page__form input[type=email] {
     margin-bottom: 0rem;
-    flex: 7;
   }
   .page__form input[type=submit] {
     flex: 3;
+    align-self: flex-start;
+  }
+  .page__error {
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 2rem;
   }
 }
 .attribution {
