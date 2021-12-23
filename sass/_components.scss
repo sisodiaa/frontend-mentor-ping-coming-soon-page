@@ -67,9 +67,15 @@
         font-size: 0.9rem;
         font-weight: 600;
         background-color: var(--color-blue);
-        color: #fff;
+        color: var(--color-white);
         letter-spacing: 0.05rem;
+        cursor: pointer;
         box-shadow: 0px 6px 18px -4px var(--color-blue);
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--color-blue-hover);
+        }
       }
     }
   }
@@ -110,6 +116,17 @@
     border: 1px solid var(--color-pale-blue);
     border-radius: 50%;
     padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: var(--color-blue);
+      border-color: var(--color-dark-blue);
+    }
+
+    &:hover > .page__icon {
+      fill: var(--color-white);
+    }
   }
 
   &__icon {
