@@ -1,1 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-light-red: hsl(354, 100%, 66%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-dark-blue: hsl(209, 33%, 12%);
+}
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 125%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page__header {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.page__header img {
+  display: block;
+  margin: 0 auto;
+}
+.page__main {
+  width: 100%;
+  margin-bottom: 7rem;
+}
+.page__heading {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+  word-spacing: 0.1rem;
+}
+.page__heading span {
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.page__subheading {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.page__form {
+  margin-bottom: 4rem;
+  padding: 0 5%;
+}
+.page__form input {
+  width: 100%;
+  border-radius: 2rem;
+}
+.page__form input[type=email] {
+  padding: 1rem 0rem 1rem 2rem;
+  border: 1px solid var(--color-pale-blue);
+  margin-bottom: 0.5rem;
+}
+.page__form input[type=email]::-webkit-input-placeholder {
+  color: var(--color-pale-blue);
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+.page__form input[type=submit] {
+  padding: 1rem 0rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: var(--color-blue);
+  color: #fff;
+  letter-spacing: 0.05rem;
+  box-shadow: 0px 6px 18px -4px var(--color-blue);
+}
+.page__illustration {
+  display: block;
+  width: 100%;
+}
+.page__footer {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.page__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  column-gap: 0.75rem;
+}
+.page__icon-box {
+  border: 1px solid var(--color-pale-blue);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.page__icon {
+  display: block;
+  margin: auto;
+  width: 1rem;
+  height: 1rem;
+  fill: var(--color-blue);
+}
+.page__legal {
+  font-size: 0.6rem;
+  color: var(--color-gray);
+}
+
+.attribution {
+  display: none;
+}
